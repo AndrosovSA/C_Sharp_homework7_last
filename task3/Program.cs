@@ -27,9 +27,9 @@ void PrintReverseArray(int[] array, int size)
 }
 Console.Write("Введите рамер массива: ");
 int n = Convert.ToInt32(Console.ReadLine());
-int[] arrayResult = CreatArrayRnd(n, 1, 20);
+int[] arrayResult = CreatArrayRnd(n, 10, 100);
 Console.Write("Массив случайных чисел: ");
 PrintArray(arrayResult);
 Console.WriteLine();
-Console.Write("Развернутый массив:     ");
+Console.Write($"Развернутый массив:     ");
 PrintReverseArray(arrayResult, n);

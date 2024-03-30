@@ -15,7 +15,6 @@ void PrintIntervalNumbers(int n, int m)
         PrintIntervalNumbers(n - 1, m);
         Console.Write($"{n - 1} ");
     }
-
 }
 Console.Write("Введите первое натуральное число: ");
 int N = Convert.ToInt32(Console.ReadLine());
@@ -23,7 +22,7 @@ Console.Write("Введите второе натуральное число: ")
 int M = Convert.ToInt32(Console.ReadLine());
 if (N < 1 || M < 1)
 {
-    Console.WriteLine("Некорректный ввод!!!");
+    Console.WriteLine("Некорректный ввод!");
     return;
 }
 PrintIntervalNumbers(N, M);
